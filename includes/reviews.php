@@ -1,0 +1,9 @@
+<section class="py-24 bg-white overflow-hidden" id="reviews">
+    <div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900" data-k="reviews">Patient Stories</h2></div>
+    <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-marquee">
+            <?php for($i=1; $i<=4; $i++): ?><li class="w-[400px] flex-shrink-0 bg-slate-50 p-8 rounded-2xl border border-gray-100 shadow-sm"><div class="flex items-center gap-4 mb-4"><div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl"><?php echo substr(val('rev'.$i.'_name'),0,1); ?></div><div><h4 class="font-bold text-slate-900 text-lg"><?php echo val('rev'.$i.'_name'); ?></h4><div class="text-yellow-400 text-sm">★★★★★</div></div></div><p class="text-gray-600 italic">"<?php echo val('rev'.$i.'_text'); ?>"</p></li><?php endfor; ?>
+            <?php for($i=1; $i<=4; $i++): ?><li class="w-[400px] flex-shrink-0 bg-slate-50 p-8 rounded-2xl border border-gray-100 shadow-sm"><div class="flex items-center gap-4 mb-4"><div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl"><?php echo substr(val('rev'.$i.'_name'),0,1); ?></div><div><h4 class="font-bold text-slate-900 text-lg"><?php echo val('rev'.$i.'_name'); ?></h4><div class="text-yellow-400 text-sm">★★★★★</div></div></div><p class="text-gray-600 italic">"<?php echo val('rev'.$i.'_text'); ?>"</p></li><?php endfor; ?>
+        </ul>
+    </div>
+</section>
